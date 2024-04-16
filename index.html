@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+
+
+    <!--DON'T TOUCH-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js"></script>
+    <!---->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a style=" padding: 10px 30px; text-decoration: none; font-size: 1.4em; margin: 15px 15px; border-radius: 50px; color: #f4f4f4; transition: all 0.3s ease 0s;" href="dashboard.html">Dashboard</a>
+        <a style=" padding: 10px 30px; text-decoration: none; font-size: 1.4em; margin: 15px 15px; border-radius: 50px; color: #f4f4f4; transition: all 0.3s ease 0s;" href="about.html">About</a>
+        <a style=" padding: 10px 30px; text-decoration: none; font-size: 1.4em; margin: 15px 15px; border-radius: 50px; color: #f4f4f4; transition: all 0.3s ease 0s;" href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="editor-container">
+            <nav class="new">
+                <button class="language" data-target="html">HTML</button>
+                <button class="language" data-target="css">CSS</button>
+                <button class="language" data-target="javascript">JavaScript</button>
+            </nav>
+            <div class="editor active" id="htmlEditor">
+                <textarea id="htmlCode" placeholder="Type HTML code here" oninput="update()"
+                    style="font-size: large;"></textarea>
+            </div>
+            <div class="editor" id="cssEditor">
+                <textarea id="cssCode" placeholder="Type CSS code here" oninput="update()"
+                    style="font-size: large;"></textarea>
+            </div>
+            <div class="editor" id="javascriptEditor">
+                <textarea id="javascriptCode" placeholder="Type JavaScript code here" oninput="update()"
+                    style="font-size: large;"></textarea>
+            </div>
+        </div>
+        <div class="viewer">
+            <iframe id="viewer" style="font-size: large;"></iframe>
+        </div>
+    </div>
+    <nav class="new">
+        <button>Chat Area</button>
+    </nav>
+    <div class="chat active">
+        <container id="chatBox" placeholder="Type your message here"></container>
+        <textarea id="chatBox" placeholder="Type your message here"></textarea>
+    </div>
+</body>
+
+</html>
