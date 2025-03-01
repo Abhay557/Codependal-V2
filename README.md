@@ -2,10 +2,6 @@
 
 Codependal editor version v2
 
-## About
-
-Codependal editor version v2
-
 [Live Demo](https://abhay557.github.io/Codependal-V2/)
 
 ## Features
